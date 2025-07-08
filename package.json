@@ -1,0 +1,26 @@
+{
+  "name": "wb-tariffs-service",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "migrate": "knex migrate:latest",
+    "migrate:ts": "ts-node ./node_modules/.bin/knex migrate:latest",
+    "start": "npm run migrate:ts && npm run dev"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "googleapis": "^150.0.1",
+    "knex": "^2.3.0",
+    "node-cron": "^3.0.2",
+    "pg": "^8.8.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "author": "Abdyrakhman Dzhumagul Numan",
+  "devDependencies": {
+    "@types/node": "^18.7.6",
+    "@types/node-cron": "^3.0.1"
+  }
+}
